@@ -6,6 +6,8 @@ import urllib.request
 import numpy as np
 import glob
 import os
+from gtts import gTTS 
+import os
 
 def recognize_text():
     org_img = cv2.imread("./images/poem.png")
@@ -33,3 +35,6 @@ def recognize_text():
 
 text = recognize_text()
 print(text)
+speech = gTTS(text = text, lang = "en", slow = False)
+speech.save("text.mp3")
+os.system("start text.mp3")
