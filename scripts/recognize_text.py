@@ -10,7 +10,7 @@ from gtts import gTTS
 import os
 
 def recognize_text():
-    org_img = cv2.imread("pythonfiles\\poem.png")
+    org_img = cv2.imread("./images/poem.png")
     # Image Resize
     resize_img = cv2.resize(
         org_img, None, fx = 2, fy = 2, 
