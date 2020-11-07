@@ -7,8 +7,8 @@ import numpy as np
 import glob
 import os
 
-def recognize_text():
-    org_img = cv2.imread("./images/poem.png")
+def recognize_text(image):
+    org_img = image
     # Image Resize
     resize_img = cv2.resize(
         org_img, None, fx = 2, fy = 2, 
@@ -28,8 +28,4 @@ def recognize_text():
     )
 
     text_img = text_img.replace("\n", " ")
-    #print(text_img)
     return text_img
-
-text = recognize_text()
-print(text)
