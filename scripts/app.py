@@ -37,6 +37,6 @@ if st.button("Get Audio"):
 
     #st.dataframe(df)
 
-    audio_file = open('./temp.mp3', "rb")
+    audio_file = open('./audio/temp.mp3', "rb")
     audio_bytes = audio_file.read()
     st.audio(audio_bytes, format="audio/mp3")

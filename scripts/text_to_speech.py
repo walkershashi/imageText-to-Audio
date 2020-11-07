@@ -12,9 +12,9 @@ T2S.set_service_url(url)
 
 def speak_text(text):
     
-    with open('temp.mp3', 'wb') as audio_file:
+    with open('./audio/temp.mp3', 'wb') as audio_file:
         response = T2S.synthesize(text, accept = 'audio/mp3', voice = 'en-US_AllisonV3Voice').get_result()
         audio_file.write(response.content)
         
-    return IPython.display.Audio('temp.mp3', autoplay = True)
+    return IPython.display.Audio('./audio/temp.mp3', autoplay = True)
 
