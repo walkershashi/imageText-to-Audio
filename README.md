@@ -6,6 +6,6 @@
 
 <ul>
 <li>Clone the repository to your system.</li>
-<li>Run the bash script "run.sh" using the following command <code>bash run.sh</code></li>
+<li>Run the bash script <code>run.sh</code> using the following command <br><code>bash run.sh</code></li>
 <li>The app should be displayed in your default browser, running at <code>localhost:8501</code>
 </ul>
