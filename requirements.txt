@@ -1,0 +1,5 @@
+numpy
+streamlit
+ibm_watson
+pytesseract
+opencv-python
